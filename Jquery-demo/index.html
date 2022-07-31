@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Jquery Demo</title>
+</head>
+<body>
+    <main>
+        <table border="4">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Selector</th>
+                    <th>Seleccionado</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>$("*")</td>
+                    <td>Selecciona todos los elementos</td>
+                    <td><button id="selector-universal">Seleccionar</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>$("#")</td>
+                    <td>Selecciona un elemento que se identifique con un ID</td>
+                    <td><button id="selector-id">Seleccionar</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>$(".")</td>
+                    <td>Selecciona todos los elementos de clase</td>
+                    <td><button id="selector-clase">Seleccionar</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>$("div")</td>
+                    <td>Selecciona todos los elementos de tipo etiqueta html</td>
+                    <td><button id="selector-etiqueta">Seleccionar</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>$("p")</td>
+                    <td>Selecciona todos los elementos de tipo parrafo</td>
+                    <td><button id="selector-parrafo">Seleccionar</button></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>$("input")</td>
+                    <td>Selecciona todos los elementos de tipo input</td>
+                    <td><button id="selector-input">Seleccionar</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <h2>Elementos de ejemplo</h2>
+            <div>
+                <div>
+                    <label for="">Correo electronico</label>
+                    <input type="email" value="ejemplo@email.com" id="email">
+                </div>
+                <div>
+                    <input type="text" value="tipo clase" class="campo">
+                    <input type="text" value="tipo clase" class="campo">
+                    <input type="text" value="tipo clase" class="campo">
+                    <input type="text" value="tipo clase" class="campo">
+                    <input type="text" value="tipo clase" class="campo">
+                    <input type="text" value="tipo clase" class="campo">
+                    <div>
+                        <div>DIV</div>
+                        <div>DIV</div>
+                        <div>DIV</div>
+                        <div>DIV</div>
+                        <p>P</p>
+                        <p>P</p>
+                        <input type="text" value="INPUT">
+                        <input type="text" value="INPUT">
+                        <input type="text" value="INPUT">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/app.js"></script>
+</html>
